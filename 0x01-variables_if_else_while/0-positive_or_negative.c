@@ -6,7 +6,7 @@
  * main - Prints whether a number is positive, zero or negative
  *
  * Description: Assigns a random number to a variable
- * and print whether the number stored in the variable 
+ * and print whether the number stored in the variable
  * is positive or negative.
  * Return: 0
  */
@@ -20,15 +20,14 @@ int main(void)
 	if (n > 0)
 	{
 		printf("%d is positive\n", n);
-
-	} else if (n == 0)
+	}
+	else if (n == 0)
 	{
 		printf("%d is zero\n", n);
-
-	} else
+	}
+	else
 	{
 		printf("%d is negative\n", n);
-
 	}
 	return (0);
 }
