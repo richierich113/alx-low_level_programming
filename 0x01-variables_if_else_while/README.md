@@ -11,3 +11,4 @@ The 8-print_base16.c is a C program that prints all the numbers of base 16 in lo
 The 9-print_comb.c is a C program that prints all possible combinations of single-digit numbers  separated by ,, followed by a space and in ascending order.
 The 1--=print_combo3.c is a C program that prints all possible different combinations of two digits.
 The 101-print_comb4.c is a C program that prints all possible different combinations of three digits.
+The 102-print_comb5.c is a C program that prints all possible combinations of two two-digit numbers ranging  from 0 to 99. The two numbers are separated by a space.
