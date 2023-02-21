@@ -5,3 +5,4 @@ The 2-print_alphabet_x10.c is a program that prints  the alphabet, in lowercase 
 The 3-islower.c is a program that that checks for lowercase character.
 The 4-isalpha.c is a program that checks for alphabetic character.
 The 5-sign.c is a program that prints the sign of a number.
+The 6-abs.c is a program that  computes the absolute value of an integer.
