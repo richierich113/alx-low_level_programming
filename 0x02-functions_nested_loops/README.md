@@ -6,3 +6,5 @@ The 3-islower.c is a program that that checks for lowercase character.
 The 4-isalpha.c is a program that checks for alphabetic character. 
 The 5-sign.c is a program that prints the sign of a number. 
 The 6-abs.c is a program that computes the absolute value of an integer.
+The 7-print_last_digit.c is a program prints the last digit of a number.
+The 8-24_hours.c is a program that prints every minute of the day of Jack Bauer, starting from 00:00 to 23:59.
