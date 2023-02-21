@@ -3,3 +3,4 @@ The 0-putchar.c is a program that prints _putchar, followed by a new line.
 The 1-alphabet.c is a program that prints  the alphabet, in lowercase, followed by a new line.
 The 2-print_alphabet_x10.c is a program that prints  the alphabet, in lowercase 10 times, followed by a new line.
 The 3-islower.c is a program that that checks for lowercase character.
+The 4-isalpha.c is a program that checks for alphabetic character.
