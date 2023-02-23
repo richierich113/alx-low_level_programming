@@ -3,8 +3,7 @@
 /**
  * print_diagonal - that draws a diagonal line on the terminal with arg value.
  * @n: Parameter of type, int.
- * Description: Takes in integer value n  and draws a diagonal line on
- * the terminal
+ * Description
  */
 void print_diagonal(int n)
 {
@@ -18,7 +17,7 @@ void print_diagonal(int n)
 	{
 		i = 0;
 
-		while (i < (n - 1))
+		while (i < n)
 		{
 			_putchar(32);
 
