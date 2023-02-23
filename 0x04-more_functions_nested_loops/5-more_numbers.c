@@ -15,7 +15,7 @@ void more_numbers(void)
 			if (j >= 10)
 			{
 				/**
-				 * print j / 10 as char and 
+				 * print j / 10 as char and
 				 * print remainder as char
 				 * ie if j = 10, j / 10 = 1 and j % 10 = 0
 				 * where the 2 _putchars will print 10 to
