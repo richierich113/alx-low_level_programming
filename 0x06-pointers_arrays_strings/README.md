@@ -9,3 +9,4 @@ The 6-cap_string.c is a  function that capitalizes all words of a string.
 The 7-leet.c is a function that encodes a string into 1337 or leet.
 The 100-rot13.c  is a function that encodes a string using rot13.
 The 101-print_number.c is a  function that prints an integer.
+The 102-magic.c is a  program that prints a[2] = 98, followed by a new line.
