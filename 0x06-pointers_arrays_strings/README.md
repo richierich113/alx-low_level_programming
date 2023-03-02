@@ -11,3 +11,4 @@ The 100-rot13.c  is a function that encodes a string using rot13.
 The 101-print_number.c is a  function that prints an integer.
 The 102-magic.c is a  program that prints a[2] = 98, followed by a new line.
 The 103-main.c is a function that adds two numbers.
+The 104-print_buffer.c is a  function that prints a buffer.
