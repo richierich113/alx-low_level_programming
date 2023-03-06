@@ -3,3 +3,4 @@ The _memset() function fills the first n bytes of the memory area pointed to by 
 The 1-memcpy.c  is a function that copies memory area.
 The 2-strchr.c is  a function that locates a character in a string.
 The 3-strspn.c is a function that gets the length of a prefix substring.
+The 4-strpbrk.c is a function that searches a string for any of a set of bytes.
