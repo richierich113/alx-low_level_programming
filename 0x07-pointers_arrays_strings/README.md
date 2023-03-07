@@ -8,3 +8,4 @@ The 5-strstr.c is  a function that locates a substring.
 The 7-print_chessboard.c is  a function that prints the chessboard.
 The 8-print_diagsums.c is a function that prints the sum of the two diagonals of a square matrix of integers.
 The 100-set_string.c is a function that sets the value of a pointer to a char.
+The 101-crackme_password is  a file that contains the password for the crackme2 executable.
