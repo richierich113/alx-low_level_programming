@@ -5,11 +5,11 @@
  * @str: pointer to character
  */
 
-void _puts(char *str)
+void _puts(char *s)
 {
-	while (*str != '\0')
+	while (*s != '\0')
 	{
-		_putchar(*str++);
+		_putchar(*s++);
 	}
 	_putchar('\n');
 }
