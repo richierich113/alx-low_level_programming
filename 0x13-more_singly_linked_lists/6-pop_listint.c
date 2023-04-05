@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -6,19 +7,17 @@
  *
  *Return: the deleted node data
  */
-
 int pop_listint(listint_t **head)
 {
-	listint_t *popped;
-	int content;
+	int retval;
+	listint_t *temp;
 
 	if (*head == NULL)
 		return (0);
 
-	popped = *head;
-	content = popped->n;
-	free(popped);
-
-	*head = (*head)->next;
-	return (content);
+	temp = (*head)->next;
+	retval = (*head)->n;
+	free(*head);
+	*head = temp;
+	return (retval);
 }
