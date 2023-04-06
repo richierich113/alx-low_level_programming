@@ -2,6 +2,7 @@
 
 /**
  * print_listint_safe - prints all the elements of a linked list
+ * Description - A function that prints all the elements of a linked list.
  * @head: head of the list
  *
  * Return: the number of nodes
