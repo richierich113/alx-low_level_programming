@@ -2,6 +2,7 @@
 
 /**
  * free_listint - this  frees a linked list
+ * Description - A function that frees a linked list.
  * @head:the  head of the list
  *
  * Return: void

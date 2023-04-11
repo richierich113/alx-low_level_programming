@@ -2,6 +2,7 @@
 
 /**
  * delete_nodeint_at_index - deletes a node at an index
+ * Description - A function that deletes a node at an index.
  * @head: pointer to the head of the list
  * @index: index of the node to be added
  *

@@ -2,6 +2,7 @@
 
 /**
  * get_nodeint_at_index - this returns the nth node of a linked list
+ * Description - A function that returns the nth node of a linked list.
  * @head: a pointer to the head of the list
  * @index: the index of the node required
  *

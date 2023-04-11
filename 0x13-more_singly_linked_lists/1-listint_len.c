@@ -2,6 +2,7 @@
 
 /**
  * listint_len - This counts the number of nodes in a linked list
+ * Description - A function that counts the number of nodes in a linked list.
  * @h: head of the list.
  *
  * Return: the number of elements

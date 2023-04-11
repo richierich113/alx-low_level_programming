@@ -2,6 +2,7 @@
 
 /**
  * insert_nodeint_at_index - returns the nth node of a linked list
+ * Description - A function that returns the nth node of a linked list.
  * @head: pointer to the head of the list
  * @idx: index of the node to be added
  * @n: content of the new node

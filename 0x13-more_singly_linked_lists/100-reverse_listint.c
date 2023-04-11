@@ -2,6 +2,7 @@
 
 /**
  * reverse_listint - reverses a linked list
+ * Description - A function that reverses a linked list.
  * @head: head of the list
  *
  * Return: the first node of the reversed node
