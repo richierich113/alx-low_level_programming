@@ -10,18 +10,14 @@
  * node doesn't exist or is NULL.
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
-	dlistint_t *query_node = head;
+{
 	unsigned int i = 0;
 
-	while (query_node != NULL)
+	while (head != NULL)
 	{
-		if (i == index)
-		{
-			return (query_node);
-		}
-		query_node = query_node->next;
-		i += 1;
+		if (i++ == index)
+			break;
+		head = head->next;
 	}
-
-	return (NULL);
+	return (head);
 }
