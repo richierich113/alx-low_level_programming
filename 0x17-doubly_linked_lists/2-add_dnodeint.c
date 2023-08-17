@@ -5,7 +5,8 @@
  * @head: A pointer to the head of the dlistint_t doubly linked list.
  * @n: int data to store in the new node.
  *
- * Return: the address of the new node. NULL otherwise if memory allocation fails.
+ * Return: the address of the new node. NULL otherwise
+ * if memory allocation fails.
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
