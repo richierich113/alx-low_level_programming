@@ -8,31 +8,34 @@
  *
  * Return: 1 if succeeded, -1 if failed.
  */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index);
+int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	dlistint_t *temp = NULL;
-	unsigned int i = 0;
+	dlistint_t *tmp = *head;
 
-	if (!head || !(*head))
-	{
+	if (*head == NULL)
 		return (-1);
+
+	for (; index != 0; index--)
+	{
+		if (tmp == NULL)
+			return (-1);
+		tmp = tmp->next;
 	}
+
+	if (tmp == *head)
+	{
+		*head = tmp->next;
+		if (*head != NULL)
+			(*head)->prev = NULL;
+	}
+
 	else
 	{
-		temp = *head;
-
-		while (index != i++ && temp)
-			temp = temp->next;
-		if (!temp)
-			return (-1);
-		if (temp->next)
-			temp->next->prev = temp->prev;
-		if (index == 0)
-			*head = temp->next;
-		else
-			temp->prev->next = temp->next;
-		free(temp);
-		return (1);
+		tmp->prev->next = tmp->next;
+		if (tmp->next != NULL)
+			tmp->next->prev = tmp->prev;
 	}
-	return (-1);
+
+	free(tmp);
+	return (1);
 }
