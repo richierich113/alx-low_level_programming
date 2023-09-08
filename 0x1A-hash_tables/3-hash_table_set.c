@@ -1,18 +1,18 @@
 #include "hash_tables.h"
 
-
 /**
- * key_index - adds an element to the hash table.
- * @key: The key to get its index
- * @size: The size of the array of the hash table.
- * Return: 1 on success otherwise 0
+ * hash_table_set - adds an element to the hash table
+ * @ht: hash table you want to add or update the key/value to
+ * @key: the key
+ * @value: value associated with the key
+ * Return: 1 on success, 0 otherwise
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *newkv_pair;
 	unsigned long int index;
 	char *value_copy;
-	
+
 	newkv_pair = (hash_node_t *)malloc(sizeof(hash_node_t));
 	if (newkv_pair == NULL)
 		return (0);
