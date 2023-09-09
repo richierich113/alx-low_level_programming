@@ -6,27 +6,30 @@
  */
 void hash_table_delete(hash_table_t *ht)
 {
+	hash_node_t *node;
+	hash_node_t *current;
 	unsigned long int index;
-	hash_node_t *current_node;
 
-	if (ht)
+	index = 0;
+	while (index < ht->size)
 	{
-		index = 0;
-		while (index < ht->size)
+		if (ht->array[index] != NULL)
 		{
-			while (ht->array[index])
+			node = ht->array[index];
+
+			while (node != NULL)
 			{
-				current_node = ht->array[index]->next;
-				free(ht->array[index]->key);
-				free(ht->array[index]->value);
-				free(ht->array[index]);
-				ht->array[index] = current_node;
+				current = node->next;
+				free(node->key);
+				free(node->value);
+				free(node);
+				node = current;
 			}
-			index++
 		}
 
-		free(ht->array);
-		free(ht);
-
+		index++;
 	}
+
+	free(ht->array);
+	free(ht);
 }
