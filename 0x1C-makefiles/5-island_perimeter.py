@@ -40,4 +40,3 @@ if __name__ == "__main__":
         [0, 0, 0, 0, 0, 0]
     ]
     print("The perimeter of the island is:", island_perimeter(grid))
-
