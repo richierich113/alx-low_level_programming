@@ -3,7 +3,7 @@
 """
 
 
-def water_areas(grid, icell, j):
+def water_areas(grid, cell, j):
     """Returns the number of water areas in a grid
     """
 
