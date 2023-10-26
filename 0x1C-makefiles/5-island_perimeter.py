@@ -17,6 +17,7 @@ def water_area(grid, m, n):
         num += 1
     return num
 
+
 def island_perimeter(grid):
     """Returns the perimeter of island"""
     perimeter = 0
