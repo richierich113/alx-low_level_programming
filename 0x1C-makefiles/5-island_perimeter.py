@@ -7,7 +7,7 @@ def water_areas(grid, cell, j):
     """Returns the number of water areas in a grid
     """
 
-    num = 0
+    wa = 0
     if cell <= 0 or not grid[cell - 1][j]:
         wa += 1
     if j <= 0 or not grid[cell][j - 1]:
