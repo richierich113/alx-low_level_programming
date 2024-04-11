@@ -12,34 +12,43 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	int left = 0;
-	int right = size - 1;
-	int mid;
-        size_t i;
+	size_t L = 0;
+	size_t R = size - 1;
+	size_t m = (L + R) / 2;
+	size_t i;
+	int Am;
 
-	if (array == NULL || size == 0)
+	if (array == NULL) /* self explanatory */
 		return (-1);
 
-	while (left <= right)
+	while (L <= R)
 	{
-		mid = (left + right) / 2;
-
+		Am = *(array + m); /* array value @ median adjusted at each iteration */
+		/* print the array being searched */
 		printf("Searching in array: ");
-		for (i = left; i <= right; i++)
+		for (i = L; i < (R + 1); i++)
 		{
-			printf("%d", array[i]);
-			if (i < right)
-				printf(", ");
-			else
-				printf("\n");
+			printf("%ld", i);
+			if (i < R)
+				printf(" "); /* if not last value use space as separator */
+			else if (i == R)
+				printf("\n"); /* if last value terminate w/ \n */
 		}
 
-		if (array[mid] == value)
-			return (mid);
-		else if (array[mid] < value)
-			left = mid + 1;
-		else
-			right = mid - 1;
+		if (Am < value) /* median < target */
+		{
+			L = m + 1; /* first index shifts to median + 1 */
+			m = (L + R) / 2; /* the median is recomputed */
+		}
+		else if (Am > value) /* value < median */
+		{
+			R = m - 1; /* last index shifts to median - 1 */
+			m = (L + R) / 2; /* the median is recomputed */
+		}
+		else if (Am == value)
+		{
+			return (m); /* median is target */
+		}
 	}
-	return (-1);
+	return (-1); /* if array exhausted */
 }
